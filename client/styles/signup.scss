@@ -1,0 +1,104 @@
+$input-transition: background-color 0.5s ease, border 0.5s ease;
+$submit-transition: all 0.5s ease;
+
+@media screen and (max-width: 960px) {
+    .sidebar {
+        display: none;
+    }
+    .form-container {
+        header {
+            display: block !important;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 500px;
+    background-color: #bababa;
+    height: 100%;
+    padding: 50px;
+    header {
+        font-size: 30px;
+    }
+}
+
+.form-container {
+    max-width: 416px;
+    margin: 100px auto;
+    width: 100%;
+    header {
+        display: none;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        border: 1px solid transparent;
+        font-size: 14px;
+        border-radius: 8px;
+        outline: none;
+        line-height: 24px;
+        padding: 10px 16px;
+        color: #0d0c22;
+        background-color: #f3f3f4;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    input[type="text"]:focus {
+        -webkit-transition: $input-transition;
+        -moz-transition: $input-transition;
+        -o-transition: $input-transition;
+        transition: $input-transition;
+        background-color: #fff;
+        border: 1px solid #f74949;
+    }
+    input[type="email"]:focus {
+        -webkit-transition: $input-transition;
+        -moz-transition: $input-transition;
+        -o-transition: $input-transition;
+        transition: $input-transition;
+        background-color: #fff;
+        border: 1px solid #f74949;
+    }
+    input[type="password"]:focus {
+        -webkit-transition: $input-transition;
+        -moz-transition: $input-transition;
+        -o-transition: $input-transition;
+        transition: $input-transition;
+        background-color: #fff;
+        border: 1px solid #f74949;
+    }
+    label {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    input[type="submit"] {
+        padding: 10px 16px;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        background: #ea4c89;
+        color: #ffffff;
+        font-weight: 700;
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    input[type="submit"]:hover {
+        -webkit-transition: $submit-transition;
+        -moz-transition: $submit-transition;
+        -o-transition: $submit-transition;
+        transition: $submit-transition;
+        background: #ec70a0;
+    }
+}
